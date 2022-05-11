@@ -1,0 +1,106 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header" >
+      <a class="navbar-brand" href="#"style="color: #000;">ByteRI</a>
+    </div>
+    <!-- <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul> -->
+<!-- </div>
+</nav>
+  
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand pull-left" ><img src="/header/ByteRI.png"></a> 
+            <a class="navbar-brand" routerLink="/components">
+                <img src="/header/ByteRI.png" alt="ICON" style="max-width: 20px; max-height: 24px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-grey" aria-current="page" routerLink="/base">Upload</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="#">Token Status</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+    <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
+        <div class="container">
+
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+           <a class="navbar-brand mr-auto" href="#"><img src="images.png" height="30" width="41"></a> -->
+
+           <a class="navbar-brand" href="#"> ByteRI </a> 
+           
+           <div class="collapse navbar-collapse" id="Navbar">
+          
+                <ul class="navbar-nav mr-auto">
+                    <!-- <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> ByteRI </a></li> -->
+                    <li class="nav-item"><a class="nav-link" routerLink="/base"><span class="fa fa-info fa-lg"></span>Token Status</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>System Status</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="/register"><span class="fa fa-info fa-lg"></span>Sign Up</a></li>
+                    <li class="nav-item"><a class="nav-link" routerLink="/login"><span class="fa fa-info fa-lg"></span>Sign In</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" routerLink="/profile"><span class="fa fa-info fa-lg"></span>Profile</a></li> -->
+                </ul>    
+        </div>
+    </div>
+    </nav>
+
+    <div class="jm" style="background-color: white;">
+    <div style="background-color: white;">
+        <div class=" text-center">
+        <a href="https://icons8.com/icon/pKUmnsp3mXlf/binary"></a>
+        <img class="img1" src="data:image/png;base64,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"/>
+        </div>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+    <br>
+  
+</body>
+
+</html>

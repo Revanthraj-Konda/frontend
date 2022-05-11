@@ -1,0 +1,22 @@
+.container
+{
+    width: 30em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 33%;
+    margin-top: 5%;
+    border: 1px solid #8080804f;
+    /* padding: 1em; */
+    border-radius: 0.5em;
+    height: 15em;
+}
+
+.margin-top-1
+{
+    margin-top: 1em;
+}
+.margin-top-2
+{
+    margin-top: 2em;
+}

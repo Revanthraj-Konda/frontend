@@ -1,0 +1,16 @@
+<body>
+    <div class="input-group mb-3">
+      
+        <input type="text" class="form-control" placeholder="Token" #token>
+        <div class="input-group-append">
+            <button class="btn btn-success" style="background-color:#007bff" type="submit" (click)="getStatus(token.value)">Get Status</button>
+        </div>
+    </div>
+    <div *ngIf="displayStatus" style="background-color: darkgrey;">
+        <p >Token: {{tkStatus.token}}</p>
+        <p >Status: {{tkStatus.status}}</p>
+        Output: <a [href]="downloadLink" *ngIf="tkStatus.status==='SUCCESS'" target="_blank">{{downloadLink}}</a>
+        <p *ngIf="tkStatus.status==='ERROR'"> Error Code: {{ tkStatus.errorCode}}</p>
+        <p *ngIf="tkStatus.status==='ERROR'"> Error Description: {{ tkStatus.errorDesc}}</p>
+    </div>
+</body>
